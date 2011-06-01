@@ -1,0 +1,25 @@
+<h1>Listing recents</h1>
+
+<table>
+  <tr>
+    <th>Input</th>
+    <th>Output</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @recents.each do |recent| %>
+  <tr>
+    <td><%= recent.input %></td>
+    <td><%= recent.output %></td>
+    <td><%= link_to 'Show', recent %></td>
+    <td><%= link_to 'Edit', edit_recent_path(recent) %></td>
+    <td><%= link_to 'Destroy', recent, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Recent', new_recent_path %>

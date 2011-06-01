@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Input:</b>
+  <%= @recent.input %>
+</p>
+
+<p>
+  <b>Output:</b>
+  <%= @recent.output %>
+</p>
+
+
+<%= link_to 'Edit', edit_recent_path(@recent) %> |
+<%= link_to 'Back', recents_path %>

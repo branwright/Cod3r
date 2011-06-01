@@ -1,4 +1,6 @@
 Cod3r::Application.routes.draw do
+  resources :recents
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
